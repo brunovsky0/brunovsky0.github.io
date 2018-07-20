@@ -1,0 +1,47 @@
+body {
+    background-color:  rgb(103, 201, 248);
+}
+
+h1 {
+    text-align: center;
+    font-size: 370%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    left:45%;
+    top:45%;
+    margin-left:-110px;
+    margin-top:-40px;
+
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: 0;
+}
+
+img {
+    animation-duration: 3s;
+    animation-name: nuvem;
+    background-image: url(Imagens/nuvem.png);
+    position: fixed;
+    
+
+    /*Duração da animação*/
+    animation-duration: 70s;
+    animation-name: nuvem1;
+    /*Número de vezes que a animação irá se repetir*/
+    animation-iteration-count: 37;
+}
+  
+/*Movimentos que a nuvem realizará*/
+@keyframes nuvem1 {
+
+    0%{
+        margin-top: 0;
+    }
+    50%{
+        margin-left:1100;
+        position: fixed;
+    }
+
+}
+
+

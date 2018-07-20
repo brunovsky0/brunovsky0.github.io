@@ -20,7 +20,7 @@ h1 {
 img {
     animation-duration: 3s;
     animation-name: nuvem;
-    background-image: url(https://github.com/brunojoseln/brunojoseln.github.io/blob/master/Imagens/nuvem.png);
+    background-image: url(https://raw.githubusercontent.com/brunojoseln/brunojoseln.github.io/master/Imagens/nuvem.png);
     position: fixed;
     
 

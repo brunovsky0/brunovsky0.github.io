@@ -20,7 +20,6 @@ h1 {
 img {
     animation-duration: 3s;
     animation-name: nuvem;
-    background-image: url(Imagens/nuvem.png);
     position: fixed;
     
 

@@ -1,17 +1,16 @@
 body {
     background-color:  rgb(103, 201, 248);
+    overflow-x: hidden;
 }
 
 h1 {
-    text-align: center;
     font-size: 370%;
     font-family: fonte;
-
-    position: fixed;
+    
     left:45%;
     top:45%;
-    margin-left:-110px;
-    margin-top:-40px;
+    margin-left: 300px;
+    margin-top:-1950px;
 
     animation-duration: 3s;
     animation-name: nome;
@@ -20,7 +19,7 @@ h1 {
 
 @font-face {
     font-family: 'fonte';
-    src: url('FreePixel.ttf') /*Para os demais navegadores*/;
+    src: url('FreePixel.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -28,7 +27,7 @@ h1 {
 .classe1 {
     animation-duration: 3s;
     animation-name: nuvem;
-    position: fixed;
+    position: relative;
 
     /*Duração da animação*/
     animation-duration: 60s;
@@ -36,18 +35,44 @@ h1 {
     /*Número de vezes que a animação irá se repetir*/
     animation-iteration-count: 37;
     
+    
 }
 
 .classe2 {
-    position: fixed;
-    width:1400px;
+
     margin-left:-150px;
-    left:10%;
-    top: 40%;
+    margin-top: 130;
+
 
 }
 
-  
+.terra{
+    margin-left:-25px;
+    margin-top: 0;
+}
+
+.balao{
+    margin-left: 500px;
+    margin-top: 0;
+    position: absolute;
+
+    animation-name: balaoA;
+    animation-duration: 60s;
+
+
+}
+
+
+@keyframes balaoA{
+    0%{
+        margin-left: 20px;
+        margin-top: 300;
+    }
+    100%{
+        margin-top: -700;
+    }
+}
+
 /*Movimentos que a nuvem realizará*/
 @keyframes nuvem1 {
 
@@ -56,7 +81,6 @@ h1 {
     }
     50%{
         margin-left:1100;
-        position: fixed;
     }
 }
 
@@ -64,17 +88,17 @@ h1 {
     0%{
         left:45%;
         top:45%;
-        margin-left:-110px;
-        margin-top: 2000px;
+        margin-left: -300px;
+        margin-top: -2000px;
     }
     50%{
         left:45%;
         top:45%;
-        margin-left:-110px;
-        margin-top:-40px;
+        margin-left: 300px;
+        margin-top:-1950px;
     }
-
-
 }
+
+
 
 

@@ -24,7 +24,7 @@ h1 {
     font-style: normal;
 }
 
-.classe1 {
+.Cnuvem {
     animation-duration: 3s;
     animation-name: nuvem;
     position: relative;
@@ -38,38 +38,53 @@ h1 {
     
 }
 
-.classe2 {
-
+.Cmontanha {
     margin-left:-150px;
     margin-top: 130;
-
-
 }
 
-.terra{
+.Cterra{
     margin-left:-25px;
     margin-top: 0;
 }
 
-.balao{
+.Cbalaol{
     margin-left: 500px;
     margin-top: -700;
     position: absolute;
 
-    animation-name: balaoA;
-    animation-duration: 60s;
-
-
+    animation-name: balaoL;
+    animation-duration: 30s;
+    animation-iteration-count: 37;
 }
 
+.Cbalaov{
+    position: absolute;
+    margin-left: 700px;
+    margin-top: -110;
 
-@keyframes balaoA{
+    animation-name: balaoV;
+    animation-duration: 35s;
+    animation-iteration-count: 37;
+}
+
+@keyframes balaoL{
     0%{
-        margin-left: 20px;
-        margin-top: 300;
+        margin-left: -100px;
+        margin-top: 400;
     }
     100%{
-        margin-top: -700;
+        margin-top: -110;
+    }
+}
+
+@keyframes balaoV{
+    0%{
+        margin-left: -50px;
+        margin-top: 400;
+    }
+    100%{
+        margin-top: -110;
     }
 }
 

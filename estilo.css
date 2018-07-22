@@ -53,7 +53,7 @@ h1 {
 
 .balao{
     margin-left: 500px;
-    margin-top: 0;
+    margin-top: -700;
     position: absolute;
 
     animation-name: balaoA;

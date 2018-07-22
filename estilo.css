@@ -5,30 +5,48 @@ body {
 h1 {
     text-align: center;
     font-size: 370%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    position: absolute;
+    font-family: fonte;
+
+    position: fixed;
     left:45%;
     top:45%;
     margin-left:-110px;
     margin-top:-40px;
 
     animation-duration: 3s;
-    animation-name: slidein;
-    animation-iteration-count: 0;
+    animation-name: nome;
+    animation-iteration-count: 1;
 }
 
-img {
+@font-face {
+    font-family: 'fonte';
+    src: url('FreePixel.ttf') /*Para os demais navegadores*/;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.classe1 {
     animation-duration: 3s;
     animation-name: nuvem;
     position: fixed;
-    
 
     /*Duração da animação*/
-    animation-duration: 70s;
+    animation-duration: 60s;
     animation-name: nuvem1;
     /*Número de vezes que a animação irá se repetir*/
     animation-iteration-count: 37;
+    
 }
+
+.classe2 {
+    position: fixed;
+    width:1400px;
+    margin-left:-150px;
+    left:10%;
+    top: 40%;
+
+}
+
   
 /*Movimentos que a nuvem realizará*/
 @keyframes nuvem1 {
@@ -40,6 +58,22 @@ img {
         margin-left:1100;
         position: fixed;
     }
+}
+
+@keyframes nome{
+    0%{
+        left:45%;
+        top:45%;
+        margin-left:-110px;
+        margin-top: 2000px;
+    }
+    50%{
+        left:45%;
+        top:45%;
+        margin-left:-110px;
+        margin-top:-40px;
+    }
+
 
 }
 

@@ -33,7 +33,7 @@ h1 {
     animation-duration: 60s;
     animation-name: nuvem1;
     /*Número de vezes que a animação irá se repetir*/
-    animation-iteration-count: 37;
+    animation-iteration-count: infinite;
     
     
 }
@@ -55,7 +55,7 @@ h1 {
 
     animation-name: balaoL;
     animation-duration: 30s;
-    animation-iteration-count: 37;
+    animation-iteration-count: infinite;
 }
 
 .Cbalaov{
@@ -65,26 +65,26 @@ h1 {
 
     animation-name: balaoV;
     animation-duration: 35s;
-    animation-iteration-count: 37;
+    animation-iteration-count: infinite;
 }
 
 @keyframes balaoL{
     0%{
-        margin-left: -100px;
+        margin-left: -150px;
         margin-top: 400;
     }
     100%{
-        margin-top: -110;
+        margin-top: -230;
     }
 }
 
 @keyframes balaoV{
     0%{
-        margin-left: -50px;
+        margin-left: -100px;
         margin-top: 400;
     }
     100%{
-        margin-top: -110;
+        margin-top: -230;
     }
 }
 

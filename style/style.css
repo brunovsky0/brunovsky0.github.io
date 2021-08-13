@@ -9,6 +9,7 @@ header{
 
 body{
     background-color: 343B3F;
+    text-align: center;
 }
 
 .logo-menu{
@@ -74,12 +75,8 @@ h1{
     border-radius: 15px;
 }
 
-#modelos{
-    text-align: center;
-}
-
-#animacoes iframe{
-   margin-left: 20px;
+#jogos{
+    margin-bottom: 10px;
 }
 
 footer{

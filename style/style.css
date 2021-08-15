@@ -5,7 +5,6 @@
 header{
     background-color: #25282B;
     box-shadow: 0px 3px 20px black;
-    
 }
 
 body{
@@ -13,6 +12,12 @@ body{
     background-size: 290px;
     background-color: #343B3F;
     text-align: center;
+    overflow-x: hidden;;
+}
+
+main{
+    width: 1200px;
+    margin: auto;
 }
 
 .logo-menu{ 
@@ -29,8 +34,6 @@ ul{
 }
 
 .menu{
-    width: 1200px;
-    margin: auto;
     display: flex;
     justify-content: space-evenly;
     padding: 18px 0px;
@@ -98,3 +101,74 @@ footer{
     margin-top: 50px;
 }
 
+@media (max-width: 1189px){
+    body{
+        overflow-x: hidden;;
+    }
+
+    main, section{
+        width: 768px;
+        margin: auto;
+        /* display: none; */
+    }
+
+    .ilustras{
+        display: grid;
+        grid-template-columns: 400px 0px ;
+    }
+    
+    
+    #ilustracoes img{
+        width: 380px;
+        margin-bottom: 25px;
+        border-radius: 15px;
+        border: white 0.5px dashed;
+    
+    }
+
+    iframe{
+        width: 100%;
+    }
+
+    #jogos iframe{
+        margin-bottom: 10px;
+    }
+
+
+    
+
+}
+
+@media (max-width: 767px){
+    main, section{
+        width: 360px;
+        margin: auto;
+    }
+
+    #banner-inicial{
+        display: none;
+    }
+
+    .menu li{
+        display: none;
+    }
+
+    .ilustras{
+        width: 282px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    iframe{
+        width: 100%;
+    }
+
+    #jogos{
+        width: 310px;
+    }
+
+    #jogos iframe{
+        margin-bottom: 10px;
+    }
+
+}

@@ -190,8 +190,12 @@ footer{
 
 @media (max-width: 767px){  
     main, section{
-        width: 360px;
+        width: 400px;
         margin: auto;
+    }
+
+    h1{
+        font-size: 40px;
     }
 
     header{

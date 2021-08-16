@@ -7,19 +7,33 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet">
 
+		<!-- BoxSlider -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
+		<!-- Bootstrap -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+
+		
+
 		<script>
 			$(document).ready(function(){
+				document.getElementById("btntopo").classList.add('btn-invisivel')
+
 			  $('.slider').bxSlider({
 				  auto: true,
 			  });
-			  
 			});
-			
-	
+
+			$(document).scroll(function() { 
+			if($(window).scrollTop() === 0) {
+				document.getElementById("btntopo").classList.add('btn-invisivel')
+			}else{
+				document.getElementById("btntopo").classList.remove('btn-invisivel')
+			}
+			});
 		</script>
 
 		<title>Bruno Neves</title>
@@ -37,23 +51,35 @@
 			</nav>
 		</header>
 		<main>
-				<section id="banner-inicial">
-					<div class="slider">
-						<img src="Imagens/Leopoldo maior.png" alt="">
-					<!-- <figcaption>&nbsp;Ilustrações&nbsp;</figcaption> -->
+			<section id="banner-inicial">
+				<div class="slider">
+					<img src="Imagens/Leopoldo maior.png" alt="">
 					<img src="Imagens/Gato.png" alt="">
 					<img src="Imagens/Abacaxi.png" alt="">
 				</div>
 			</section>
+			
 			<section id="ilustracoes"> 
 				<h1>Ilustrações</h1>
 				<div class="ilustras">
-					<img src="Imagens/Leopoldo.png" alt="">
-					<img src="Imagens/Dragao.png" alt="">
-					<img src="Imagens/Little duck.png" alt=""> 
-					<img src="Imagens/Nabo final.png" alt="">
-					<img src="Imagens/Pato.png" alt="">
-					<img src="Imagens/Cervo.png" alt="">
+					<a href="Imagens/Leopoldo.png" class="fancybox" data-fancybox="gallery1">
+						<img src="Imagens/Leopoldo.png" alt="">
+					</a>
+					<a href="Imagens/Dragao.png" class="fancybox" data-fancybox="gallery1">
+						<img src="Imagens/Dragao.png" alt="">
+					</a>
+					<a href="Imagens/Little duck.png" class="fancybox" data-fancybox="gallery1">
+						<img src="Imagens/Little duck.png" alt="">
+					</a>
+					<a href="Imagens/Nabo final.png" class="fancybox" data-fancybox="gallery1">
+						<img src="Imagens/Nabo final.png" alt="">
+					</a>
+					<a href="Imagens/Pato.png" class="fancybox" data-fancybox="gallery1">
+						<img src="Imagens/Pato.png" alt="">
+					</a>
+					<a href="Imagens/Cervo.png" class="fancybox" data-fancybox="gallery1">
+						<img src="Imagens/Cervo.png" alt="">
+					</a>
 				</div>
 			</section>
 			
@@ -72,6 +98,8 @@
 				<iframe src="https://itch.io/embed/875751" height="167" width="552" frameborder="0"><a href="https://brunow.itch.io/a-fuga-da-beterraba">A fuga da beterraba by Brunow</a></iframe>
 				<iframe src="https://itch.io/embed/722295" height="167" width="552" frameborder="0"><a href="https://brunow.itch.io/aloe-beta-5">A Primeira Árvore protótipo by Brunow</a></iframe>
 			</section>
+
+			<a href="#top" class="btncima" id="btntopo">⬆</a>
 		</main>
 		<footer>
 			Site desenvolvido por Bruno Neves - 2021

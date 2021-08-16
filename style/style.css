@@ -1,6 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
 }
+
 
 header{
     background-color: #25282B;
@@ -100,6 +105,26 @@ footer{
     padding: 20px;
     margin-top: 50px;
 }
+
+.btncima {
+    position: fixed;
+    bottom: 20;
+    right: 30;
+    color: white;
+    background-color: #25282B;
+    font-size: 40px;
+    border-radius: 100%;
+    text-decoration: none;
+    padding: 5px 13px;
+
+  }
+
+  .btn-invisivel{
+    display: none;
+  }
+
+
+  
 
 @media (max-width: 1189px){
     body{

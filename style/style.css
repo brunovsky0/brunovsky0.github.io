@@ -123,6 +123,28 @@ footer{
     margin-top: 50px;
 }
 
+.redessociais img{
+    border-radius: 100%;
+    width: 40px;
+    margin-top: 10px;
+    
+}
+
+.redessociais a{
+    text-decoration:none;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+}
+
+.redessociais, .creditos{
+    flex: 2;
+}
+
+
+
 .btncima {
     position: fixed;
     z-index: 0;
@@ -190,9 +212,14 @@ footer{
 }
 
 @media (max-width: 767px){  
+    
     main, section{
         width: 100%;
         margin: auto;
+    }
+
+    header{
+        height  : 130px;
     }
 
     h1{
@@ -220,7 +247,7 @@ footer{
 
 
     #modelos iframe{
-        width: 90%;
+        width: 400px;
     }
 
     #animacoes iframe{
@@ -235,6 +262,22 @@ footer{
     #jogos iframe{
         width: 90%;
         margin-bottom: 10px;
+    }
+
+    .redessociais img{
+        border-radius: 100%;
+        width: 30px;
+        margin-top: 10px;
+    }
+    
+    footer{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+
+    footer{
+        font-size: 12px;
     }
 
 }

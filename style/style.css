@@ -109,6 +109,10 @@ h1{
     align-items: center;
 }
 
+#jogos iframe{
+    border-radius: 20px
+}
+
 footer{
     background-color: #25282B;
     font-family: 'Quantico', sans-serif;
@@ -184,10 +188,14 @@ footer{
 
 }
 
-@media (max-width: 767px){
+@media (max-width: 767px){  
     main, section{
         width: 360px;
         margin: auto;
+    }
+
+    header{
+        width: 100%;
     }
 
     #banner-inicial{

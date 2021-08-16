@@ -79,16 +79,29 @@ h1{
     grid-template-columns: 408px 408px 1px;
 }
 
+.modelosexi{
+    display: grid;
+    grid-template-columns: 600px 600px ;
+    justify-items: center;
+    align-items: center;
+}
+
+#modelos iframe{
+    border-radius: 30px;
+}
+
+.sketchfab-embed-wrapper{
+    margin-bottom: 19px;
+}
 
 #ilustracoes img{
     width: 380px;
     margin-bottom: 25px;
     border-radius: 15px;
     border: white 0.5px dashed;
+    box-shadow: rgba(0, 0, 0, 0.2) 10px 23px 28px
 
 }
-
-
 
 #jogos{
     margin-bottom: 10px;
@@ -116,14 +129,12 @@ footer{
     border-radius: 100%;
     text-decoration: none;
     padding: 5px 13px;
-
+    opacity: 0.9;
   }
 
   .btn-invisivel{
     display: none;
   }
-
-
   
 
 @media (max-width: 1189px){
@@ -151,8 +162,17 @@ footer{
     
     }
 
-    iframe{
+    .modelosexi{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    #animacoes iframe{
         width: 100%;
+        align-content: center;
+        align-items: center;
     }
 
     #jogos iframe{
@@ -186,6 +206,10 @@ footer{
 
     iframe{
         width: 100%;
+    }
+
+    #modelos iframe{
+        width: 360px;
     }
 
     #jogos{

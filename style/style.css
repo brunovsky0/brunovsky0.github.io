@@ -211,18 +211,17 @@ footer{
     }
 
     .ilustras{
-        width: 282px;
         display: flex;
         flex-direction: column;
+        justify-items: center;
+        align-items: center;
     }
 
-    iframe{
-        width: 100%;
-    }
 
     #modelos iframe{
         width: 360px;
     }
+    
 
     #jogos{
         width: 310px;

@@ -125,6 +125,7 @@ footer{
 
 .btncima {
     position: fixed;
+    z-index: 0;
     bottom: 20;
     right: 30;
     color: white;
@@ -190,16 +191,12 @@ footer{
 
 @media (max-width: 767px){  
     main, section{
-        width: 360px;
+        width: 100%;
         margin: auto;
     }
 
     h1{
         font-size: 40px;
-    }
-
-    header{
-        width: 100%;
     }
 
     #banner-inicial{
@@ -210,16 +207,20 @@ footer{
         display: none;
     }
 
+    #ilustracoes img{
+        width: 90%;
+    }
+
     .ilustras{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: auto ;
         justify-items: center;
         align-items: center;
     }
 
 
     #modelos iframe{
-        width: 360px;
+        width: 90%;
     }
 
     #animacoes iframe{
@@ -232,7 +233,7 @@ footer{
     }
 
     #jogos iframe{
-        width: 100%;
+        width: 90%;
         margin-bottom: 10px;
     }
 

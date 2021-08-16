@@ -221,6 +221,10 @@ footer{
     #modelos iframe{
         width: 360px;
     }
+
+    #animacoes iframe{
+        width: 90%;
+    }
     
 
     #jogos{
@@ -228,6 +232,7 @@ footer{
     }
 
     #jogos iframe{
+        width: 100%;
         margin-bottom: 10px;
     }
 

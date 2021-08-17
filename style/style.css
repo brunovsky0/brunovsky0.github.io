@@ -23,7 +23,7 @@ header{
 
 body{
     background-image: url(../Imagens/background3.png);
-    background-size: 290px;
+    background-size: 220px;
     background-color: #343B3F;
     text-align: center;
     overflow-x: hidden;;
@@ -178,6 +178,15 @@ footer{
 
   .btncima img{
       width: 50px;
+  }
+
+  button{
+      background-color: transparent;
+      background-repeat:no-repeat;
+      border: none;
+      cursor:pointer;
+      overflow: hidden;     
+      border-radius: 100%;
   }
 
   

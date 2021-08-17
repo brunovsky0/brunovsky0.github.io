@@ -23,7 +23,7 @@ header{
 
 body{
     background-image: url(../Imagens/background3.png);
-    background-size: 220px;
+    background-size: 150px;
     background-color: #343B3F;
     text-align: center;
     overflow-x: hidden;;
@@ -305,6 +305,5 @@ footer{
         font-size: 12px;
     }
 
-    
 
 }

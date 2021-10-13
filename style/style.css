@@ -191,6 +191,7 @@ footer{
 @media (max-width: 1189px){
     body{
         overflow-x: hidden;;
+        background-size: 150px;
     }
 
     main, section{
